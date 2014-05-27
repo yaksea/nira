@@ -1,0 +1,8 @@
+	<dd id="def_dd_class" class="{{fieldDef.get('css') or ''}}" >
+		<label for="{{fieldName}}">
+		{% if fieldDef['required'] %}		
+		<span class="red">*</span>
+		{% end %}
+		{{fieldDef['label']}}：</label>
+		<input {% raw xconfig%} id="{{  fieldName  }}" class='easyui-component' componentType='validatebox' required="true"  name="{{  fieldName  }}" type="text" />
+	</dd>

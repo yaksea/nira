@@ -1,0 +1,58 @@
+{% extends "../molds/frame.html" %} {% block header %}
+<script src="/static/js/page/user.join.js"></script>
+<style>
+.tabs{
+	background:white;
+}
+.content{
+	padding:60px 60px 60px 60px;
+}
+.tab{
+	width:49%;
+	margin:0px;
+	line-height:40px;
+}
+</style>
+{% end %} {%block body%}
+<div>
+	<div>【{{sysName}}】邀请您加入。</div>
+	<form action="" id="form1">
+		<div>账号：<input type="text" value="{{userName}}" id="userName"/></div>
+		<dl>
+			<dd>
+				<label for="realName">姓名</label><input type="text"
+					id="realName" />
+			</dd>
+		</dl>
+		<div class="tabs" style='width:600px; height:400px;'>
+			<div class="title" style='height:40px;font-size:14px;'>
+				<div class="tab selected">已有账号</div>
+				<div class="tab">未注册账号，立即注册</div>
+			</div>
+			<dl  class="content">
+				<dd>
+					<label for="passwords">请输入密码：</label><input type="password"
+						id="passwords" />
+				</dd>
+			</dl>
+			<dl class="content" style='display:none'>
+				<dd>
+					<label for="passwords1">请设置密码：</label><input type="password"
+						id="passwords1" />
+				</dd>
+				<dd>
+					<label for="passwords2">重复密码：</label><input type="password"
+						id="passwords2" />
+				</dd>
+			</dl>
+		</div>
+</div>
+
+
+<div>
+	<a href="javascript:nira.join()">加入</a>
+</div>
+</form>
+</div>
+
+{%end%}

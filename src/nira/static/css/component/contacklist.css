@@ -1,0 +1,50 @@
+._contact_btn_a{
+	height:23px;
+	margin-left:5px;
+	padding-top:5px;
+	width:40px;
+	float:left;
+	cursor:pointer;
+	color:blue;
+}
+._box_control_{
+	margin-right:15px;	
+}
+.custContactPicker{
+	-webkit-margin-start:2px;
+	padding-left:2px;
+}
+.custContactPicker label{
+  font-size: 13px;
+  background-color:#DEDEDE;
+  border:1px solid #DEDEDE;
+  margin-right:10px;    
+  text-align:right;
+  width:60px;	
+  line-height:22px;
+  float:left;
+}
+.custContactPicker div{
+	height:30px;	
+	width:auto;
+}
+.custContactPicker button{
+  height:22px;
+}
+.custContactPicker input
+{
+  line-height: 19px;
+  font-size: 15px;
+  color: #000000;
+  border:none;
+  float:left;
+  border: solid 1px #BABABA;
+  background-color: #FFFFFF;
+  width:150px;
+}
+#def_dd_class.custContactPicker{
+	width:100%;	
+}
+._addContact{
+	float:right;
+}

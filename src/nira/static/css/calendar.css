@@ -1,0 +1,53 @@
+.cld-btnPrev, .cld-btnNext{
+    height: 40px;
+}
+.cld-btnPrev, .cld-btnNext, .cld-btnMonth{
+    display: inline-block;
+}
+#tbDates{
+    border-bottom:solid 1px #DCD9D3;
+    border-left:solid 1px #DCD9D3;
+}
+#tbDates{
+    width:800px;
+}
+.cld-day{
+    border-top:solid 1px #DCD9D3;
+    border-right:solid 1px #DCD9D3;
+    width:14.2857%;
+    height:90px;
+    vertical-align: baseline;
+    
+}
+.cld-cell-day{
+    text-align: right;
+    color: #666;
+    height:16px;
+    vertical-align: baseline;
+}
+.cld-other-month .cld-cell-day{
+    color: #DCD9D3;
+}
+.tp-main{
+    position: absolute;
+    border: solid 1px #ccc;
+    background: #dfdfdf;
+}
+.tp-body{
+    background: #EFEFEF;
+}
+.tp-header{
+    height: 40px;
+    width: 200px;
+    background: #dfdfdf;
+    cursor: move;
+}
+.tp-handler{
+    width: 160px;
+    cursor: move;
+    float: left;
+}
+.tp-toggle{
+    width: 40px;
+    float: right;
+}

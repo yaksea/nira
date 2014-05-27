@@ -1,0 +1,12 @@
+{% extends "../molds/frame.html" %} {% block header %}
+<script src="/static/js/page/{{context.module.name}}.list.js"></script>
+{% end %} {%block body%}
+<div>
+<div id="listContainer">
+
+</div>
+
+<a href="/{{context.module.name}}/create">添加{{context.module.title}}</a>
+</div>
+
+{%end%}

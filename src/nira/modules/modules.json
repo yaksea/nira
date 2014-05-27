@@ -1,0 +1,67 @@
+{
+	"home" : {
+		"title" : "首页"
+	},
+	"project" : {
+		"title" : "项目",
+		"isEntity":true
+	},
+	"version" : {
+		"title" : "版本",
+		"isEntity":true
+	},
+	"plan" : {
+		"title" : "计划",
+		"isEntity":true
+	},
+	"user" : {
+		"title" : "成员",
+		"isEntity":true
+	},
+	"team" : {
+		"title" : "团队",
+		"isEntity":true
+	},
+	"project_user" : {
+		"title" : "项目团队",
+		"isEntity":true
+	},
+	"version_user" : {
+		"title" : "版本团队",
+		"isEntity":true
+	},
+	"task" : {
+		"title" : "任务",
+		"isEntity":true
+	},
+	"bug" : {
+		"title" : "测试"
+	},
+	"report" : {
+		"title" : "报表"
+	},
+	"diary" : {
+		"title" : "工作日志"
+	},
+	"sys_user" : {
+		"title" : "用户管理",
+		"isEntity":true
+	},
+	"role":{
+		"title" : "角色管理",
+		"isEntity":true	
+	},
+	"holiday" : {
+		"title" : "节假日管理"
+	},
+	"setting_account" : {
+		"title" : "帐户管理"
+	},
+	"setting_habit" : {
+		"title" : "使用习惯设置"
+	},
+	"setting_filter" : {
+		"title" : "设置过滤器"
+	}
+
+}

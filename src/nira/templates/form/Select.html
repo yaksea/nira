@@ -1,0 +1,18 @@
+	<dd id="def_dd_class">
+		<label for="{{fieldName}}">{% if fieldDef['required'] %}		
+		<span class="red">*</span>
+		{% end %}{{fieldDef['label']}}：</label>
+		<select id="{{fieldName}}" class='x-form-field' name="{{fieldName}}">
+			{% if fieldDef['required']==False %}
+				<option value="">请选择</option>
+			{% end %}
+			{% for option in fieldDef['options'] %}
+			{% if option[0] == fieldDef.get('default') %}	
+			<option value="{{option[0]}}" selected="selected">{{option[1]}}</option>
+			{% else %}	
+			<option value="{{option[0]}}">{{option[1]}}</option>
+			{%end%}
+			{%end%}
+		</select>
+
+</dd>

@@ -1,0 +1,26 @@
+{% extends "../molds/frame.html" %} {% block header %}
+<script src="/static/js/page/{{context.module.name}}.list.js"></script>
+{% end %} {%block body%}
+{% module Template("modules/pathNav.html", context=context) %}
+<div>
+	<div>
+		<table>
+			<thead>
+				<tr>
+					<th>用户</th>
+					<th>角色</th>
+					<th>负责模块</th>
+					<th>每日可用工时</th>
+					<th>已计划工时</th>
+					<th>操作</th>
+				</tr>
+			</thead>
+			<tbody id="listContainer"></tbody>
+			<tfoot></tfoot>
+		</table>
+	</div>
+
+	
+</div>
+
+{%end%}

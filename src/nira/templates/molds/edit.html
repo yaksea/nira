@@ -1,0 +1,18 @@
+{% extends "frame.html" %} {% block header %}
+<script src="/static/js/page/molds.edit.js"></script>
+{% end %} {%block body%}
+<div>
+{% module Template("modules/pathNav.html", context=context) %}
+
+
+<form action="" method="post" id="form1"
+encType="multipart/form-data">
+{%raw forms%}
+</form>
+
+<div class="mainButtons">
+	<a href="javascript:nira.cancel()" class='btn btn-common'>取 消</a>
+	<a href="javascript:nira.save()"  class='btn btn-common btn-primary'>保 存</a>
+</div>
+</div>
+{%end%}

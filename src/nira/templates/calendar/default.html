@@ -1,0 +1,27 @@
+{% extends "../molds/frame.html" %} {% block header %}
+<style>
+    
+</style>
+<link href="/static/css/calendar.css" rel="stylesheet" type="text/css" />
+<script src="/static/js/page/calendar.js"></script>
+{% end %} {%block body%}
+
+<div style="padding:20px;">
+  
+
+<div id="pnlSwitcher">
+    <button class="cld-btnPrev"> &lt; </button>
+    <h1 class="cld-btnMonth">may 2014</h1>
+    <button class="cld-btnNext">&gt;</button>
+</div>
+ <div id="pnlDates" style="overflow: hidden;height:550px;">
+ 	<table id="tbDates" cellpadding="0" cellspacing="0" width="80%" >
+ 		<tbody></tbody>
+ 	</table>
+   
+ </div>
+ <div id="calendarDemo" style="width:500px;height:500px;">
+   
+ </div>
+ </div>
+{%end%}

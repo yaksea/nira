@@ -1,0 +1,9 @@
+	<dd class="{{fieldDef.get('css') or ''}} easyui-component" componentType="versionPicker" id="{{  fieldName  }}" name="{{  fieldName  }}" >
+		<label for="{{fieldName}}">
+		{% if fieldDef['required'] %}		
+		<span class="red">*</span>
+		{% end %}
+		{{fieldDef['label']}}：</label>
+		<input class="major" type="text" placeholder="主版本号(数字)" />
+		- <input class="minor" type="text"  placeholder="主版本号(数字)"  />
+	</dd>

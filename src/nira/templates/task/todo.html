@@ -1,0 +1,102 @@
+{% extends "../molds/frame.html" %} {% block header %}
+<style>
+    .done {
+        text-decoration: line-through;
+    }
+
+    .ulTaskList {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    li {
+        list-style: none outside none;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+        height: 26px;
+        cursor: pointer;
+        position: relative;
+    }
+
+    li.taskToPerch {
+        border: dashed 1px #CCCCCC;
+        border-radius: 4px;
+        height: 20px;
+        width: 240px;
+    }
+
+    .btnLink {
+        padding: 2px 7px;
+    }
+
+    .pnlNubbin {
+        background: none repeat scroll 0 0 #FFFFFF;
+        border-bottom-left-radius: 20px;
+        border-top-left-radius: 20px;
+        box-shadow: -1px 0 1px rgba(0, 0, 0, 0.2);
+        position: absolute;
+        left: -72px;
+        display: block;
+        width: 69px;
+        height: 20px;
+        display: none;
+    }
+    .taskGroup {
+        border: solid 1px #ccc;
+        width: 240px;
+        display: inline-block;
+        vertical-align: top;
+        margin-right:10px;
+    }
+    .taskGroup .title{
+    	border-bottom: solid 1px #ccc;
+    	height: 28px;
+    	line-height: 28px;
+    	font-size: 14px;
+    	padding:0px 10px;
+    	background: #fdfdfd;
+    	cursor: move;
+    }
+    #btnCreateGroup{
+    	font-size:16px;
+    }
+    #pnlGroupList .groupToPerch{
+        background:#aaa;
+        height:100px; 	
+    }
+</style>
+<script>
+	var pnlGroupList;
+</script>
+<script src="/static/js/page/task.todo.js"></script>
+<script src="/static/js/page/task.todo.group.js"></script>
+{% end %} {%block body%}
+<div id="pnlOperate">
+	<table>
+		<tr>
+			<td><input type="checkbox" id="btnInline" checked="true" /><label for="btnInline">对齐任务组</label></td>
+		</tr>
+	</table>
+	
+</div>
+<div  style="padding: 40px 0px 10px 80px;">
+	<div style="display:inline-block" id="pnlGroupList">
+		<div class="groupToPerch taskGroup" style="display:none;"></div>
+	</div>
+	<div class="taskGroup" id="pnlCreate">
+		<a href="javascript:void(0)" id="btnCreateGroup">添加任务组</a>
+		<div id="pnlCreateForm" style="display:none;">
+			<input type="text" class="subject">
+			<div>
+				<a href="javascript:void(0)" class="btnCreate">Create</a> 
+				<a href="javascript:void(0)" class="btnCancel">Cancel</a>
+			</div>
+		</div>
+	</div>
+</div>
+<ul id="ulToPerch" style="display:none;">
+    <li id="taskToPerch"></li>
+</ul>
+
+{%end%}

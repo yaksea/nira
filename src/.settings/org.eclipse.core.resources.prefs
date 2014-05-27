@@ -1,0 +1,17 @@
+eclipse.preferences.version=1
+encoding//nira/base/handlers/baseEditHandler.py=utf-8
+encoding//nira/base/handlers/baseHandler.py=utf-8
+encoding//nira/base/handlers/createHandler.py=utf-8
+encoding//nira/base/handlers/editHandler.py=utf-8
+encoding//nira/base/handlers/jsonHandler.py=utf-8
+encoding//nira/base/handlers/moduleHandler.py=utf-8
+encoding//nira/base/handlers/sessionHandler.py=utf-8
+encoding//nira/base/handlers/sysCacheHandler.py=utf-8
+encoding//nira/common/cache/sessionManager.py=utf-8
+encoding//nira/common/tnd/params.py=utf-8
+encoding//nira/common/utility.py=utf-8
+encoding//nira/form/formAdapter.py=utf-8
+encoding//nira/handlers/calendar.py=utf-8
+encoding//nira/handlers/gantt.py=utf-8
+encoding//nira/handlers/task.py=utf-8
+encoding//nira/main.py=utf-8

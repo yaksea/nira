@@ -1,0 +1,32 @@
+{% extends "../molds/frame.html" %} {% block header %}
+<script src="/static/js/page/{{context.module.name}}.list.js"></script>
+{% end %} {%block body%}
+<div>
+	<table>
+		<tr>
+			<td><div id="pnlFilter"></div>
+				<div id="pnlList">
+					<table>
+						<thead>
+							<tr>
+								<td>code</td>
+								<td>version</td>
+							</tr>
+						</thead>
+						<tbody id='tbList'></tbody>
+					</table>
+				</div></td>
+			<td>
+
+				<div id="pnlControl">
+					<a href="javascript:void(0)" id="btnCreate">添加任务</a>
+				</div>
+				<div id="pnlEdit"></div>
+			</td>
+		</tr>
+	</table>
+
+
+</div>
+
+{%end%}

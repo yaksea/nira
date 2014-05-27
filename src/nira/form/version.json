@@ -1,0 +1,55 @@
+{
+	"fields" : {
+		"projectId" : {
+			"valueType" : "str",
+			"label" : "项目",
+			"required" : true
+		},
+		"project" : {// 出，parse
+			"valueType" : "json",
+			"label" : "项目"
+		},
+		"name" : {
+			"valueType" : "json",
+			"label" : "版本",
+			"required" : true,
+			"formType" : "VersionPicker",
+			"demo" : {
+				"major" : 123,
+				"minor" : 234,
+				"full":"123.234"
+			}
+		},
+		"processStatus" : {
+			"valueType" : "int",
+			"label" : "状态",
+			"required" : true,
+			"formType" : "Select",
+			"options" : [[0, "计划制订中"], [1, "执行中"], [2, "已发布"]]
+		},
+		"planDuration" : {
+			"valueType" : "json",
+			"formType" : "DurationPicker",
+			"label" : "计划周期",
+			"demo" : {
+				"start" : 123,
+				"end" : 234
+			}
+		},
+		"actualStart" : {
+			"valueType" : "date",
+			"formType" : "DatePicker",
+			"label" : "实际开始"
+		},
+		"actualEnd" : {
+			"valueType" : "date",
+			"formType" : "DatePicker",
+			"label" : "实际结束"
+		}
+	},
+	"blocks" : {
+		"基本信息" : ["name", "processStatus", "planDuration",
+				"actualStart", "actualEnd"]
+	},
+	"sequence" : ["基本信息"]
+}

@@ -1,0 +1,53 @@
+.tagPicker-container {
+	position: relative;
+	padding: 0px;
+}
+
+.tagPicker-showBox {
+	border: solid 1px #ccc;
+	padding: 2px 2px;
+	display: inline-block;
+	min-width: 100px;
+}
+
+.tagPicker-label {
+	border: none;
+}
+
+.tagPicker-btnDropdown {
+	width: 15px;
+	height: 15px;
+	background: url(/static/images/combo_arrow.gif);
+	float: right;
+}
+
+.tagPicker-pnlList {
+	max-height: 300px;
+}
+
+.tagPicker-popup {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	border: solid 1px #ccc;
+	z-index: 10000;
+	background: #fff;
+	width: 400px;
+	height: 300px;
+}
+
+.tag {
+	border: 1px solid #CCCCCC;
+	border-radius: 5px 5px 5px 5px;
+	color: #666363;
+	cursor: pointer;
+	height: 16px;
+	padding: 3px;
+	margin-bottom: 2px;
+	margin-right: 5px;
+}
+
+.selected {
+	background: #dfdfdf;
+}

@@ -1,0 +1,38 @@
+{
+	"fields" : {
+		"releaseVersion" : {
+			"valueType" : "json",
+			"label" : "版本",
+			"required":true,
+			"formType" : "VersionPicker",
+			"demo":{"major": 123, "minor": 234}			
+		},
+		"releaseStatus" : {
+			"valueType" : "int",
+			"label" : "状态",
+			"required":true,
+			"formType" : "Select",
+			"options":[[0,"计划制订中"],[1,"执行中"],[2,"已发布"]]			
+		},
+		"planDuration" : {
+			"valueType" : "json",
+			"formType" : "DurationPicker",
+			"label" : "计划周期",
+			"demo":{"start": 123, "end": 234}
+		},
+		"actualStart" : {
+			"valueType" : "date",
+			"formType" : "DatePicker",
+			"label" : "实际开始"
+		},
+		"actualEnd" : {
+			"valueType" : "date",
+			"formType" : "DatePicker",
+			"label" : "实际结束"
+		}
+	},
+	"blocks" : {
+		"基本信息" : ["releaseVersion", "releaseStatus", "planDuration", "actualStart", "actualEnd"]
+	},
+	"sequence" : ["基本信息"]
+}

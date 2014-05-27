@@ -1,0 +1,36 @@
+{
+	"fields" : {
+		"name" : {
+			"length":[0,50],
+			"valueType" : "str",
+			"label" : "名称",
+			"required":true,
+			"formType" : "TextBox"			
+		},
+		"code" : {
+			"length":[0,20],
+			"valueType" : "str",
+			"required":true,
+			"label" : "代号",
+			"formType" : "TextBox"
+		},
+		"description" : {
+			"length":[0,200],
+			"valueType" : "str",
+			"label" : "描述",
+			"formType" : "TextArea",
+			"formProperties":{"css" : "oneRow"}
+		},
+		"isSecret" : {
+			"valueType" : "str",
+			"formType" : "Switcher",
+			"valueType" : "bool",
+			"label" : "是否保密",
+			"hint":"对非项目成员不可见"
+		}
+	},
+	"blocks" : {
+		"基本信息" : ["name", "code", "description", "isSecret"]
+	},
+	"sequence" : ["基本信息"]
+}

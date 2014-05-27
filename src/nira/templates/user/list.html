@@ -1,0 +1,38 @@
+{% extends "../molds/frame.html" %} {% block header %}
+<script src="/static/js/page/user.list.js"></script>
+{% end %} {%block body%}
+{% module Template("modules/pathNav.html", context=context) %}
+<div>
+	<div>
+		<table>
+			<thead>
+				<tr>
+					<th>姓名</th>
+					<th>账号</th>
+					<th>状态</th>
+					<th>操作</th>
+				</tr>
+			</thead>
+			<tbody id="listContainer"></tbody>
+		</table>
+	</div>
+
+	
+</div>
+<a href='javascript:nira.startInvite()'>invite</a>
+
+
+<div id="dlgInvite" style="display: none; width: 360px; height: 400px;"
+	buttons="#dlgInvite_buttons">
+	<dl>
+		<dd><label for="txtEmail"></label><input type="text" id="txtEmail" /></dd>
+		<dd><label for="txtRealName"></label><input type="text" id="txtRealName" /></dd>
+	</dl>
+	
+	<div style='text-align: center; margin-top: 10px;' id='dlgInvite_buttons'>
+		<button class="common cancel">取消</button>
+		<button class="common save">确定</button>
+	</div>
+</div>
+
+{%end%}

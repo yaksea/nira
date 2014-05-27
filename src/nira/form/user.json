@@ -1,0 +1,39 @@
+{
+	"fields" : {
+		"_id":{
+			"valueType" : "str",
+			"label" : "用户ID",
+			"required":true
+		},
+		"userName":{
+			"valueType" : "str",
+			"label" : "登陆用户名，目前即邮箱",
+			"required":true
+		},
+		"passwords":{
+			"valueType" : "str",
+			"label" : "MD5加密",
+			"required":true
+		},
+		"email":{
+			"valueType" : "str",
+			"label" : "邮箱即用户名",
+			"required":true
+		},
+		"phone":{
+			"valueType" : "str",
+			"label" : "手机号码",
+			"display":[]
+		},
+		"authTicket":{
+			"valueType" : "str",
+			"label" : "验证票据"
+		},
+		"preference":{
+			"valueType" : "str",
+			"label" : "偏好，默认设置",
+			"demo":{"sysId":"","realName":""}			
+		}
+		
+	}	
+}

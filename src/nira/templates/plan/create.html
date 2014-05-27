@@ -1,0 +1,16 @@
+{% extends "../molds/frame.html" %} {% block header %} 
+<script src="/static/js/page/{{context.module.name}}.create.js"></script>
+{% end %} {%block body%}
+<div>
+   <dl class="form">
+   	<dt>code</dt>
+   	<dd><input type="text" class="code" /></dd>
+   	<dt>version</dt>
+   	<dd><input type="text" class="version" /></dd>
+   </dl>		
+    
+
+    <button id="btnSubmit">保存</button>
+</div>
+
+{%end%}

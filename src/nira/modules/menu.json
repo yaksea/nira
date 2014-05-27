@@ -1,0 +1,24 @@
+{
+	"front" : 
+	[
+		"home",
+		["project", ["version","version_user","team","plan"]],
+		"task",
+		"diary",
+		"bug",
+		"report"		
+	],
+	"setting" : 
+	[
+		"accountSetting",
+		"habitSetting",
+		"filterSetting"
+	],
+	"admin" : 
+	[
+		"role",
+		"sys_user",
+		"holiday"
+	]
+	
+}

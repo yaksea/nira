@@ -1,0 +1,38 @@
+<dd class="full_width height" id="def_dd_class">
+	<label for="{{fieldName}}"> {% if fieldDef['required']
+		%} <span class="red">*</span> {% end %} {{fieldDef['label']}}：
+	</label>
+	<textarea id="{{  fieldName  }}" resizable='true'
+		name="{{  fieldName  }}" type="text" {% raw xconfig%}rows="2"></textarea>
+</dd>
+<script>
+	var editor;
+	$(function(){
+		editor = KindEditor.create('textarea[name="{{  fieldName  }}"]', {
+			resizeType : 1,
+			allowPreviewEmoticons : true,
+			allowImageUpload : false,
+			items : [ 'formatblock', 'fontname', 'fontsize', 
+			          '|', 'forecolor', 'hilitecolor',
+					'bold', 'italic', 'underline', 'strikethrough', 'lineheight', 'removeformat', '|',
+					'justifyleft', 'justifycenter', 'justifyright',
+					'insertorderedlist', 'insertunorderedlist', 'indent', 'outdent', 'subscript', 'superscript', '|',
+					'undo', 'redo','|',  'cut', 'copy', 'paste', 'plainpaste', 'wordpaste', '|', 
+					'emoticons', 'image', 'flash', 'media', 'insertfile', 'table', 'hr', 'link', 'unlink']
+		});
+	});
+	
+	function saveHTML(){
+		$("#{{fieldName}}").val(editor.html());
+	}
+
+	submitFunctions.push(saveHTML);
+
+	function bindHTML(html){
+		editor.html(html);
+	}
+	bindFunctions["{{fieldName}}"] = bindHTML;
+</script>
+
+
+

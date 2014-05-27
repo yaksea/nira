@@ -1,0 +1,24 @@
+.comboPicker-row {
+	height: 17px;
+	background: #FFF;
+	padding: 1px 0px 1px 2px ;
+}
+
+.comboPicker-row:hover,.comboPicker-row-selected {
+	background: #cccccc;
+}
+
+.comboPicker-btnMore {
+	height: 26px;
+	line-height: 26px;
+	text-align: center;
+	background: #dfdf99;
+	margin: 1px 0px;
+	cursor: pointer;
+}
+.comboPicker-row div{
+	word-break:keep-all;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	overflow:hidden;
+}

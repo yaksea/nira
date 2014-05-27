@@ -1,0 +1,17 @@
+{
+	"fields" : {
+		"_id" : {
+			"valueType" : "str",
+			"label" : "RoleID",
+			"required" : true
+		},
+		"name" : {
+			"valueType" : "str",
+			"label" : "角色名称",
+			"required" : true
+		}
+	},
+	"blocks" : {
+		"base" : ["name"]
+	}
+}

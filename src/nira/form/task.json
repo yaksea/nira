@@ -1,0 +1,98 @@
+{
+	"fields" : {
+		"subject" : {
+			"length":[0,50],
+			"valueType" : "str",
+			"label" : "任务主题",
+			"required":true,
+			"formType" : "TextBox"			
+		},
+		"done" : {
+			"valueType" : "int"
+		},
+		"order" : {
+			"valueType" : "float",
+			"default" : 10
+		},
+		"groupId" : {
+			"valueType" : "str"
+		},
+		"version" : {
+			"valueType" : "json",
+			"label" : "版本",
+			"display" : [],
+			"demo":{"id":"", "name":""}
+		},
+		"build" : {
+			"valueType" : "json",
+			"label" : "编译版本",
+			"display" : []
+		},
+		"taskType" : {
+			"valueType" : "int",
+			"formType" : "Select",
+			"label" : "任务类型",
+			"options":[[1, "需求"],[2, "设计"],[3, "开发"],[4, "测试"],[5, "管理"]]
+		},
+		"assignTo" : {
+			"valueType" : "json",
+			"formType" : "UserPicker",
+			"label" : "指派给"
+		},
+		"arrangeStatus" : {//编排状态
+			"valueType" : "int",
+			"formType" : "Select",
+			"label" : "状态",
+			"options":[[0, "未编排"],[1, "编排中"],[2, "已编排"]]
+		},
+		"processStatus" : {
+			"valueType" : "int",
+			"formType" : "Select",
+			"label" : "状态",
+			"options":[[0, "未开始"],[1, "进行中"],[2, "被阻塞"],[3, "已完成"]]
+		},
+		"priority" : {
+			"valueType" : "int",
+			"formType" : "Select",
+			"label" : "优先级",
+			"options":[[1, "1"],[2, "2"],[3, "3"],[4, "4"]]
+		},
+		"description" : {
+			"valueType" : "str",
+			"formType" : "TextArea",
+			"label" : "描述"
+		},
+		"planDuration" : {
+			"valueType" : "date",
+			"formType" : "DurationPicker",
+			"label" : "计划周期",
+			"demo":{"start": 123, "end": 234}
+		},
+		"actualStart" : {
+			"valueType" : "date",
+			"formType" : "DatePicker",
+			"label" : "实际开始"
+		},
+		"actualEnd" : {
+			"valueType" : "date",
+			"formType" : "DatePicker",
+			"label" : "实际结束"
+		},
+		"multiTasks" : {
+			"valueType" : "list",
+			"formType" : "TaskPicker",
+			"label" : "可同时进行的任务"
+		},
+		"depend" : {
+			"valueType" : "json",
+			"formType" : "TaskPicker",
+			"label" : "前置任务"
+		}
+	},
+	"blocks" : {
+		"基本信息" : ["subject", "taskType", "assignTo", "processStatus", "priority", "description"],
+		"计划" : ["planDuration", "actualStart", "actualEnd"],
+		"关系": ["parent","depend"]
+	},
+	"sequence" : ["基本信息", "计划", "层级关系"]
+}

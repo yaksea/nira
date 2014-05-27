@@ -1,0 +1,32 @@
+{
+	"fields" : {
+		"projectId" : {//进，存
+			"valueType" : "str",
+			"label" : "项目",
+			"required":true
+		},
+		"project" : {//出，parse
+			"valueType" : "json",
+			"label" : "项目"
+		},
+		
+		"userId" : {//进，存
+			"valueType" : "str",
+			"label" : "用户",
+			"required":true
+		},
+		"user" : {//出，parse
+			"valueType" : "json",
+			"label" : "用户"
+		},
+		"versions" : {//versionId list
+			"valueType" : "list",
+			"label" : "参与版本"
+		}
+	},
+	"blocks" : {
+		
+	},
+	"list":[],
+	"sequence" : ["基本信息"]
+}

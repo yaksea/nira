@@ -1,0 +1,48 @@
+{
+	"fields" : {
+		"userId":{
+			"valueType" : "str",
+			"label" : "用户ID",
+			"required":true
+		},
+		"sysId":{
+			"valueType" : "str",
+			"required":true
+		},
+		"realName":{
+			"valueType" : "str",
+			"label" : "姓名",
+			"required":true
+		},
+		"email":{
+			"valueType" : "str",
+			"label" : "发送邀请及再次发送时用，通过后做为冗余",
+			"required":true
+		},
+		"pinyin":{
+			"valueType" : "str",
+			"label" : "拼音",
+			"required":true
+		},
+		"jianpin":{
+			"valueType" : "str",
+			"label" : "简拼",
+			"required":true
+		},
+		"status":{
+			"valueType" : "int",
+			"label" : "状态",
+			"required":true,
+			"option":[[0,"已邀请，未通过"],[1,"已通过"]]
+		},
+		"_id":{
+			"valueType" : "str",
+			"label" : "_id即是邀请码"
+		},
+		"settings":{
+			"valueType" : "str",
+			"label" : "个人设置"
+		}
+		
+	}	
+}

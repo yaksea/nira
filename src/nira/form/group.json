@@ -1,0 +1,23 @@
+{
+	"fields" : {
+		"subject" : {
+			"valueType" : "str",
+			"label" : "任务主题",
+			"required":true,
+			"formType" : "TextBox"			
+		},
+		"order" : {
+			"valueType" : "float",
+			"default" : 10
+		},
+		"position":{
+			"valueType": {"top":"int","left":"int"}
+		}
+	},
+	"blocks" : {
+		"基本信息" : ["subject", "taskType", "assignTo", "processStatus", "priority", "description"],
+		"计划" : ["planDuration", "actualStart", "actualEnd"],
+		"关系": ["parent","depend"]
+	},
+	"sequence" : ["基本信息", "计划", "层级关系"]
+}

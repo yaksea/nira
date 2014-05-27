@@ -1,0 +1,50 @@
+{
+	"fields" : {
+		"projectId" : {
+			"valueType" : "str",
+			"label" : "项目",
+			"required" : true
+		},
+		"project" : {// 出，parse
+			"valueType" : "json",
+			"label" : "项目"
+		},
+		"releaseId" : {
+			"valueType" : "str",
+			"label" : "版本",
+			"required" : true
+		},
+		"release" : {// 出，parse
+			"valueType" : "json",
+			"label" : "版本"
+		},
+		"userId" : {// 进，存
+			"valueType" : "str",
+			"label" : "用户",
+			"required" : true
+		},
+		"user" : {// 出，parse
+			"valueType" : "str",
+			"label" : "用户",
+			"required" : true
+		},
+		"roles" : {
+			"valueType" : "list",
+			"label" : "角色"
+		},
+		"dialyHours" : {
+			"valueType" : "int",
+			"label" : "每日可用工时"
+		},
+		"modules" : {
+			"valueType" : "list",
+			"label" : "负责模块"
+		}
+	},
+	"blocks" : {
+		"基本信息" : ["releaseVersion", "releaseStatus", "planDuration",
+				"actualStart", "actualEnd"]
+	},
+	"list" : [],
+	"sequence" : ["基本信息"]
+}
